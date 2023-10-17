@@ -20,7 +20,7 @@ variable "source_ami" {
 
 variable "ssh_username" {
   type    = string
-  default = "admin"
+  default = "admin_user"
 }
 
 variable "vpc_id" {
@@ -76,7 +76,7 @@ build {
   name    = "packer-ami"
   sources = ["source.amazon-ebs.app-ami"]
 
-  
+
   provisioner "file" {
     source      = "../webapp.zip"
     destination = "/opt/webapp.zip"
