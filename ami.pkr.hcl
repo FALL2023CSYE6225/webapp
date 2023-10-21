@@ -23,7 +23,7 @@ variable "ssh_username" {
   default = "admin"
 }
 
-variable "vpc_id" {
+variable "vpc_id" 
   type    = string
   default = "vpc-01e6d98c0a832c06d"
 }
